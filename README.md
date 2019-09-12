@@ -1,34 +1,37 @@
 ## Welcome to Dfish_Z Pages
 
-In the past couple of years there has been an online explosion in the number of personal Webcam sites. More people are choosing to live in front of a camera, hooked up to the Internet via a high-speed connection.
+Time will tell you the love for the simple things lasts long and the people loving you are the warmest.
 
 - YY Group: M8808633
 - Steam: Dfish_Z
 - Weibo: [pemodeyu](http://weibo.com/penmodeyu)
 
-### Project
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```c++
-template <class FwdIt, class Compare = std::less<typename FwdIt::value_type>>
-void quickSort(FwdIt first, FwdIt last, Compare cmp = Compare{}) {
-  auto const N = std::distance(first, last);
-  if (N <= 1)
-    return;
-  auto const pivot = std::next(first, N / 2);
-  std::nth_element(first, pivot, last, cmp);
-  quickSort(first, pivot, cmp);
-  quickSort(pivot, last, cmp);
-}
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 ### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/penmodeyu/penmodeyu.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your repository settings. The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Binary Search
+
+There are numerous variations of binary search. In particular, fractional cascading speeds up binary searches for the same value in multiple arrays.
+
+```javascript
+function binary_search(arr, key) {
+    var low = 0, high = arr.length - 1;
+    while(low <= high){
+        var mid = parseInt(low + (high - low) / 2); 
+        if(key === arr[mid]){
+            return  mid;
+        } else if (key > arr[mid]){
+            low = mid + 1;
+        } else if (key < arr[mid]){
+            high = mid -1;
+        } else {
+            return -1;
+        }
+    }
+};
+```
 
 ### Contact
 
-Having trouble with Pages? [contact support](https://github.com/contact) and I’ll help you sort it out.
+Having trouble with Pages? [contact support](mailto:065193@163.com) and I’ll help you sort it out.
